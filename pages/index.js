@@ -17,7 +17,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
 const Home = () => (
@@ -173,14 +172,14 @@ const Home = () => (
             title="Portfolio"
             thumbnail="/ubuntuthemeportfolio.png"
           >
-            My Portfolio Website
+            Ubuntu Themed Portfolio
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://braculibrary.vercel.app"
+            title="University Library"
+            thumbnail="/images/LMS.png"
           >
-            A Markdown note-taking app
+            University Library Management System
           </GridItem>
         </SimpleGrid>
 
