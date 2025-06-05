@@ -166,7 +166,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={6} alignItems="stretch">
           <GridItem
             href="https://insertfahim.vercel.app/"
             title="Portfolio"
@@ -175,11 +175,11 @@ const Home = () => (
             Ubuntu Themed Portfolio
           </GridItem>
           <GridItem
-            href="https://braculibrary.vercel.app"
-            title="University Library"
-            thumbnail="/images/LMS.png"
+            href="https://leetcode.com/u/insert_fahim/"
+            title="LeetCode Profile"
+            thumbnail="/leetcode.png"
           >
-            University Library Management System
+            Problem Solving & Competitive Programming
           </GridItem>
         </SimpleGrid>
 

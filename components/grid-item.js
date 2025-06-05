@@ -4,8 +4,14 @@ import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
-    <LinkBox cursor="pointer">
+  <Box
+    w="100%"
+    textAlign="center"
+    h="100%"
+    display="flex"
+    flexDirection="column"
+  >
+    <LinkBox cursor="pointer" h="100%" display="flex" flexDirection="column">
       <Image
         src={thumbnail}
         alt={title}
@@ -15,9 +21,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         height={200}
       />
       <LinkOverlay href={href} target="_blank">
-        <Text mt={2}>{title}</Text>
+        <Text mt={2} fontWeight="semibold">
+          {title}
+        </Text>
       </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={14} flex={1}>
+        {children}
+      </Text>
     </LinkBox>
   </Box>
 )
