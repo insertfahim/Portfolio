@@ -5,7 +5,6 @@ import {
   Box,
   UnorderedList,
   ListItem,
-  OrderedList,
   Image,
   Code,
   Table,

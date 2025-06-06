@@ -253,7 +253,7 @@ class Trie {
       <P>
         Fenwick trees, also known as Binary Indexed Trees (BIT), provide an
         efficient way to calculate prefix sums in an array while supporting
-        updates. They're more space-efficient than segment trees for certain
+        updates. They&apos;re more space-efficient than segment trees for certain
         types of range queries.
       </P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
