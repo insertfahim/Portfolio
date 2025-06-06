@@ -1,5 +1,4 @@
 import { Container, Box, Heading, Link, Button, Center } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'

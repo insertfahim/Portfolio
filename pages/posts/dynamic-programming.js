@@ -6,7 +6,6 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Link,
   Image,
   Code,
   Table,
@@ -18,7 +17,6 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Post = () => (
   <Layout title="Dynamic Programming Masterclass">
@@ -28,7 +26,7 @@ const Post = () => (
       </Heading>
       <Text color="gray.500" fontSize="sm" mb={8}>
         June 3, 2025 • 18 min read
-      </Text>{' '}
+      </Text>
       <Image
         src="/images/Dynamic Programming Masterclass.png"
         alt="Dynamic Programming Masterclass"
@@ -39,14 +37,14 @@ const Post = () => (
       <P>
         Dynamic Programming (DP) is one of the most powerful algorithmic
         paradigms in computer science, yet it remains challenging for many
-        developers to master. In this comprehensive guide, I'll demystify
+        developers to master. In this comprehensive guide, I&apos;ll demystify
         dynamic programming, breaking down the core concepts, implementation
         patterns, and optimization techniques that will help you solve complex
         problems with elegance and efficiency.
       </P>
       <P>
         Drawing from my experience with competitive programming and technical
-        interviews at top tech companies, I'll walk you through a structured
+        interviews at top tech companies, I&apos;ll walk you through a structured
         approach to tackling DP problems that has consistently helped me convert
         intimidating challenges into manageable solutions.
       </P>
@@ -55,7 +53,7 @@ const Post = () => (
       </Heading>
       <P>
         At its core, dynamic programming is a method for solving complex
-        problems by breaking them down into simpler subproblems. It's
+        problems by breaking them down into simpler subproblems. It&apos;s
         particularly effective when:
       </P>
       <UnorderedList mb={6} pl={6}>
@@ -87,11 +85,11 @@ const Post = () => (
       <P>
         The state represents the current situation in the problem. Identifying
         the right state variables is often the most crucial step. Ask yourself:
-        "What information do I need to make an optimal decision at each step?"
+        &quot;What information do I need to make an optimal decision at each step?&quot;
       </P>
       <Box p={4} bg="whiteAlpha.200" borderRadius="md" mb={6}>
-        <Text fontWeight="bold">Example:</Text> In the classic "Knapsack
-        Problem," the state would be defined by (i, w):
+        <Text fontWeight="bold">Example:</Text> In the classic &quot;Knapsack
+        Problem,&quot; the state would be defined by (i, w):
         <UnorderedList mt={2}>
           <ListItem>
             i = the index of the current item being considered
@@ -104,7 +102,7 @@ const Post = () => (
       </Heading>
       <P>
         This is the mathematical expression that relates the current state to
-        previous states. It's essentially the heart of your DP solution,
+        previous states. It&apos;s essentially the heart of your DP solution,
         expressing how to build optimal solutions from previously computed
         optimal subproblems.
       </P>
@@ -150,12 +148,12 @@ const Post = () => (
         memo table.
         <Text fontWeight="bold" mt={3}>
           Bottom-Up (Tabulation):
-        </Text>{' '}
+        </Text>
         Start with base cases and iteratively build up to the solution of the
         original problem using a DP table.
       </Box>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
-        5. Analyze Space & Time Complexity
+        5. Analyze Space &amp; Time Complexity
       </Heading>
       <P>The efficiency of a DP solution is determined by:</P>
       <UnorderedList mb={4} pl={6}>
@@ -171,7 +169,7 @@ const Post = () => (
       <Heading as="h2" fontSize={20} mt={8} mb={4}>
         Implementation Patterns: From Concept to Code
       </Heading>
-      <P>Let's examine both implementation approaches in detail:</P>
+      <P>Let&apos;s examine both implementation approaches in detail:</P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
         Top-Down Approach (Memoization)
       </Heading>
@@ -196,10 +194,10 @@ const Post = () => (
     if (memo[i][w] !== -1) return memo[i][w];
     
     // Item is too heavy for current capacity
-    if (weights[i-1] {'>'} w) {
+    if (weights[i-1] > w) {
       memo[i][w] = dp(i-1, w);
     } else {
-      // Max of (skip item, take item)
+      // Take maximum of including or excluding current item
       memo[i][w] = Math.max(
         dp(i-1, w),
         dp(i-1, w - weights[i-1]) + values[i-1]
@@ -233,7 +231,7 @@ const Post = () => (
   for (let i = 1; i <= n; i++) {
     for (let w = 1; w <= capacity; w++) {
       // Current item is too heavy
-      if (weights[i-1] {'>'} w) {
+      if (weights[i-1] > w) {
         dp[i][w] = dp[i-1][w];
       } else {
         // Max of (skip item, take item)
@@ -292,7 +290,7 @@ const Post = () => (
         Common DP Patterns and Problem Types
       </Heading>
       <P>
-        After solving hundreds of DP problems, I've observed that many fall into
+        After solving hundreds of DP problems, I&apos;ve observed that many fall into
         recognizable patterns. Familiarizing yourself with these patterns can
         significantly accelerate your problem-solving process:
       </P>
@@ -426,7 +424,7 @@ const Post = () => (
   let curr = Array(capacity + 1).fill(0);
   
   for (let i = 1; i <= n; i++) {    for (let w = 1; w <= capacity; w++) {
-      if (weights[i-1] {'>'} w) {
+      if (weights[i-1] > w) {
         curr[w] = prev[w];
       } else {
         curr[w] = Math.max(
@@ -465,7 +463,7 @@ const Post = () => (
   const dp = Array(capacity + 1).fill(0);
   
   for (let i = 1; i <= n; i++) {    // Must iterate backward to avoid using the updated values
-    for (let w = capacity; w {'>='} weights[i-1]; w--) {
+    for (let w = capacity; w >= weights[i-1]; w--) {
       dp[w] = Math.max(
         dp[w],
         dp[w - weights[i-1]] + values[i-1]
@@ -501,7 +499,7 @@ const Post = () => (
         Tackling Complex DP Problems: A Case Study
       </Heading>
       <P>
-        Let's walk through a complete example to illustrate the full DP approach
+        Let&apos;s walk through a complete example to illustrate the full DP approach
         on a challenging problem: "Longest Palindromic Subsequence".
       </P>
       <Box p={4} bg="whiteAlpha.200" borderRadius="md" mb={6}>
@@ -545,7 +543,7 @@ If s[i] !== s[j]:
         <ListItem>
           dp[i][i] = 1 (single character is a palindrome of length 1)
         </ListItem>
-        <ListItem>dp[i][j] = 0 for i {'>'} j (empty substring)</ListItem>
+        <ListItem>dp[i][j] = 0 for i > j (empty substring)</ListItem>
       </UnorderedList>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
         Step 4: Implementation (Bottom-Up)
@@ -644,7 +642,7 @@ If s[i] !== s[j]:
       </Heading>
       <P>
         Dynamic programming is as much an art as it is a science. While the
-        framework I've outlined provides a structured approach, developing an
+        framework I&apos;ve outlined provides a structured approach, developing an
         intuition for identifying DP problems and designing elegant state
         representations comes with practice and exposure to diverse problem
         types.
@@ -658,7 +656,7 @@ If s[i] !== s[j]:
       </P>
       <P>
         Remember that the hardest part of DP is often finding the right state
-        definition and recurrence relation. Once you've cracked that, the
+        definition and recurrence relation. Once you&apos;ve cracked that, the
         implementation typically follows naturally. Don&apos;t be discouraged by
         initial difficulty – even experienced programmers sometimes struggle
         with complex DP problems.

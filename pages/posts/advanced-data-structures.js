@@ -6,13 +6,11 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Link,
   Image,
   Code
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Post = () => (
   <Layout title="Advanced Data Structures for Coding Interviews">
@@ -22,7 +20,7 @@ const Post = () => (
       </Heading>
       <Text color="gray.500" fontSize="sm" mb={8}>
         June 5, 2025 • 15 min read
-      </Text>{' '}
+      </Text>
       <Image
         src="/images/Advanced Data Structures for Coding Interviews.png"
         alt="Advanced Data Structures"
@@ -39,7 +37,7 @@ const Post = () => (
         complex algorithmic problems efficiently.
       </P>
       <P>
-        In this comprehensive guide, I'll walk you through several advanced data
+        In this comprehensive guide, I&apos;ll walk you through several advanced data
         structures that frequently appear in coding interviews, explaining their
         mechanics, implementation details, and practical applications. My goal
         is to demystify these powerful tools and help you add them to your
@@ -55,7 +53,7 @@ const Post = () => (
         efficient for prefix-based operations.
       </P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
-        Key Operations & Complexity
+        Key Operations &amp; Complexity
       </Heading>
       <Box p={4} bg="whiteAlpha.200" borderRadius="md" mb={6}>
         <Text>
@@ -156,7 +154,7 @@ class Trie {
         elements, all in logarithmic time.
       </P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
-        Key Operations & Complexity
+        Key Operations &amp; Complexity
       </Heading>
       <Box p={4} bg="whiteAlpha.200" borderRadius="md" mb={6}>
         <Text>
@@ -249,15 +247,6 @@ class Trie {
 }`}
         </Code>
       </Box>
-      <Heading as="h3" fontSize={16} mt={6} mb={3}>
-        Interview Applications
-      </Heading>
-      <UnorderedList mb={6} pl={6}>
-        <ListItem>Range sum/min/max queries with updates</ListItem>
-        <ListItem>Finding most frequent element in a range</ListItem>
-        <ListItem>Range GCD or LCM queries</ListItem>
-        <ListItem>Problems involving range operations on arrays</ListItem>
-      </UnorderedList>
       <Heading as="h2" fontSize={20} mt={8} mb={4}>
         3. Fenwick Tree (Binary Indexed Tree)
       </Heading>

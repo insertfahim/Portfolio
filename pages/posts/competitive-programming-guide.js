@@ -18,10 +18,10 @@ const Post = () => (
     <Container>
       <Heading as="h1" fontSize={24} mb={4}>
         The Art of Competitive Programming: A Comprehensive Guide
-      </Heading>{' '}
+      </Heading>
       <Text color="gray.500" fontSize="sm" mb={8}>
         June 7, 2025 • 12 min read
-      </Text>{' '}
+      </Text>
       <Image
         src="/images/Art of Competitive Programming.png"
         alt="Competitive Programming"
@@ -33,7 +33,7 @@ const Post = () => (
         Competitive programming has become one of the most intellectually
         stimulating activities for developers worldwide. It combines algorithmic
         thinking, efficient coding, and problem-solving skills in a
-        high-pressure environment. Whether you're aiming for the International
+        high-pressure environment. Whether you&apos;re aiming for the International
         Collegiate Programming Contest (ICPC), Google Code Jam, or just want to
         improve your problem-solving abilities, this guide will help you
         navigate the exciting world of competitive programming.
@@ -75,15 +75,15 @@ const Post = () => (
       <Box p={4} bg="whiteAlpha.200" borderRadius="md" mb={6}>
         <Text fontWeight="bold">C++:</Text> Offers the Standard Template Library
         (STL) with efficient implementations of common data structures and
-        algorithms. It's fast and the most widely used in competitions.
+        algorithms. It&apos;s fast and the most widely used in competitions.
         <Text fontWeight="bold" mt={3}>
           Java:
-        </Text>{' '}
+        </Text>
         Slightly more verbose but has excellent library support and is very
         reliable.
         <Text fontWeight="bold" mt={3}>
           Python:
-        </Text>{' '}
+        </Text>
         Great for readability and has powerful built-in features, but can be
         slower for computationally intensive problems.
       </Box>
@@ -106,12 +106,12 @@ const Post = () => (
         Advanced Topics: Leveling Up Your Skills
       </Heading>
       <P>
-        Once you're comfortable with the basics, you should gradually explore
+        Once you&apos;re comfortable with the basics, you should gradually explore
         more advanced topics:
       </P>
       <UnorderedList mb={6} pl={6}>
         <ListItem>
-          <Text fontWeight="bold">Graph Algorithms:</Text> DFS, BFS, Dijkstra's,
+          <Text fontWeight="bold">Graph Algorithms:</Text> DFS, BFS, Dijkstra&apos;s,
           Bellman-Ford, Floyd-Warshall, minimum spanning trees
         </ListItem>
         <ListItem>
@@ -141,7 +141,7 @@ const Post = () => (
       </Heading>
       <P>
         Consistent practice is the key to improving in competitive programming.
-        Here's a structured approach:
+        Here&apos;s a structured approach:
       </P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
         1. Regular Practice
@@ -168,14 +168,14 @@ const Post = () => (
         4. Upsolving
       </Heading>
       <P>
-        After each contest, spend time solving the problems you couldn't solve
+        After each contest, spend time solving the problems you couldn&apos;t solve
         during the contest. This is where the most learning happens.
       </P>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
         5. Study Solutions
       </Heading>
       <P>
-        Look at other people's solutions, especially for problems you found
+        Look at other people&apos;s solutions, especially for problems you found
         difficult. Understanding different approaches broadens your
         problem-solving toolkit.
       </P>
@@ -189,146 +189,16 @@ const Post = () => (
         <ListItem>
           <Link href="https://codeforces.com/" isExternal>
             Codeforces <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
+          </Link>
           - Regular contests and an extensive problem archive
         </ListItem>
         <ListItem>
           <Link href="https://leetcode.com/" isExternal>
             LeetCode <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
+          </Link>
           - Great for interview preparation and algorithmic challenges
         </ListItem>
-        <ListItem>
-          <Link href="https://atcoder.jp/" isExternal>
-            AtCoder <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - High-quality problems with a focus on mathematical thinking
-        </ListItem>
-        <ListItem>
-          <Link href="https://www.codechef.com/" isExternal>
-            CodeChef <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Monthly contests and a diverse problem set
-        </ListItem>
-        <ListItem>
-          <Link href="https://open.kattis.com/" isExternal>
-            Kattis <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Used in many ICPC regional contests
-        </ListItem>
       </UnorderedList>
-      <Heading as="h3" fontSize={16} mt={6} mb={3}>
-        Learning Resources
-      </Heading>
-      <UnorderedList mb={6} pl={6}>
-        <ListItem>
-          <Link href="https://cp-algorithms.com/" isExternal>
-            CP Algorithms <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Comprehensive library of algorithm implementations and explanations
-        </ListItem>
-        <ListItem>
-          <Link href="https://cses.fi/book/book.pdf" isExternal>
-            Competitive Programmer's Handbook <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Excellent free book by Antti Laaksonen
-        </ListItem>
-        <ListItem>
-          <Link
-            href="https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg"
-            isExternal
-          >
-            Errichto YouTube Channel <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Detailed tutorials and contest analyses
-        </ListItem>
-        <ListItem>
-          <Link
-            href="https://www.youtube.com/channel/UCDpm_UMrjiVBo0Z2jrBgIkA"
-            isExternal
-          >
-            SecondThread YouTube Channel <ExternalLinkIcon mx="2px" />
-          </Link>{' '}
-          - Excellent explanations of complex algorithms
-        </ListItem>
-      </UnorderedList>
-      <Heading as="h2" fontSize={20} mt={8} mb={4}>
-        The Competitive Mindset: Beyond Algorithms
-      </Heading>
-      <P>
-        Success in competitive programming requires more than just technical
-        knowledge:
-      </P>
-      <UnorderedList mb={6} pl={6}>
-        <ListItem>
-          <Text fontWeight="bold">Time Management:</Text> Learn to prioritize
-          problems and know when to move on
-        </ListItem>
-        <ListItem>
-          <Text fontWeight="bold">Stress Handling:</Text> Stay calm under
-          pressure during contests
-        </ListItem>
-        <ListItem>
-          <Text fontWeight="bold">Debugging Skills:</Text> Develop systematic
-          approaches to find and fix bugs quickly
-        </ListItem>
-        <ListItem>
-          <Text fontWeight="bold">Learning from Failures:</Text> View each
-          contest as a learning opportunity
-        </ListItem>
-        <ListItem>
-          <Text fontWeight="bold">Persistence:</Text> Progress comes with
-          consistent effort over time
-        </ListItem>
-      </UnorderedList>
-      <Heading as="h2" fontSize={20} mt={8} mb={4}>
-        My Personal Journey in Competitive Programming
-      </Heading>
-      <P>
-        Throughout my programming career, competitive programming has been a
-        transformative practice that has sharpened my problem-solving abilities
-        and algorithm design skills. I've participated in numerous contests
-        including Google Code Jam, Facebook Hacker Cup, and regional ICPC
-        events.
-      </P>
-      <P>
-        The most valuable lesson I've learned is that improvement is gradual but
-        consistent. From struggling with basic implementation problems to
-        solving complex dynamic programming challenges, each step built upon the
-        previous one. The problem-solving patterns and optimization mindset I
-        developed through competitive programming have been invaluable in my
-        professional software development work.
-      </P>
-      <Heading as="h2" fontSize={20} mt={8} mb={4}>
-        Conclusion: The Journey Never Ends
-      </Heading>
-      <P>
-        Competitive programming is a never-ending journey of learning and
-        improvement. Even the world's top competitive programmers continue to
-        learn new techniques and approaches. The beauty of this field is that
-        there's always a harder problem waiting to be solved, a more elegant
-        algorithm to be discovered, or a more efficient implementation to be
-        crafted.
-      </P>
-      <P>
-        Whether you're aiming to win major competitions, ace technical
-        interviews, or simply become a better problem solver, the skills you
-        develop through competitive programming will serve you well throughout
-        your career in software development and beyond.
-      </P>
-      <P>
-        Remember: the goal isn't just to solve problems but to grow your
-        analytical thinking and creative problem-solving abilities. Happy
-        coding!
-      </P>
-      <Box mt={10} p={4} bg="whiteAlpha.200" borderRadius="md">
-        <Text fontStyle="italic">
-          If you found this guide helpful, consider checking out my other posts
-          on advanced data structures, dynamic programming, and graph
-          algorithms. Feel free to reach out if you have questions or want to
-          discuss competitive programming strategies!
-        </Text>
-      </Box>
     </Container>
   </Layout>
 )
