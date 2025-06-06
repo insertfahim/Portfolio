@@ -4,12 +4,11 @@ import {
   Heading,
   List,
   ListItem,
-  UnorderedList,
-  Meta
+  UnorderedList
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
-import { WorkImage } from '../../components/work'
+import { WorkImage, Meta } from '../../components/work'
 
 const Work = () => (
   <Layout title="Horizon Banking Platform">
