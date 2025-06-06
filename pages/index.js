@@ -10,7 +10,7 @@ import {
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -18,6 +18,7 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
+import Newsletter from '../components/newsletter'
 
 const Home = () => (
   <Layout>
@@ -204,16 +205,8 @@ const Home = () => (
           projects, tutorials, and videos
         </p>
 
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
+        <Box my={4}>
+          <Newsletter />
         </Box>
       </Section>
     </Container>
