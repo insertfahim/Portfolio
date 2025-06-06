@@ -112,6 +112,19 @@ const Home = () => (
           <BioYear>2024-Present</BioYear>
           Working as a Research Assistant at Brac University
         </BioSection>
+
+        <Box align="center" my={4}>
+          <Button
+            as={NextLink}
+            href="/resume"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+            variant="outline"
+          >
+            View My Resume
+          </Button>
+        </Box>
       </Section>
 
       <Section delay={0.3}>

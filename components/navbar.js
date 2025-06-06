@@ -83,6 +83,9 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="/resume" path={path}>
+            Resume
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/insertfahim/Portfolio"
@@ -117,6 +120,9 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/resume">
+                  Resume
                 </MenuItem>
                 <MenuItem
                   as={Link}
