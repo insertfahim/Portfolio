@@ -542,7 +542,7 @@ If s[i] !== s[j]:
         <ListItem>
           dp[i][i] = 1 (single character is a palindrome of length 1)
         </ListItem>
-        <ListItem>dp[i][j] = 0 for i > j (empty substring)</ListItem>
+        <ListItem>dp[i][j] = 0 for i &gt; j (empty substring)</ListItem>
       </UnorderedList>
       <Heading as="h3" fontSize={16} mt={6} mb={3}>
         Step 4: Implementation (Bottom-Up)
