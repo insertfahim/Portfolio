@@ -19,6 +19,8 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         loading="lazy"
         width={400}
         height={200}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        style={{ objectFit: 'cover' }}
       />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2} fontWeight="semibold">
