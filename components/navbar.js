@@ -22,15 +22,26 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const activeBg = useColorModeValue('grassTeal', 'grassTeal')
+  const activeColor = useColorModeValue('#202023', '#202023')
+  const hoverBg = useColorModeValue('gray.100', 'whiteAlpha.200')
+  
   return (
     <Link
       as={NextLink}
       href={href}
       scroll={false}
-      p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      p={3}
+      bg={active ? activeBg : 'transparent'}
+      color={active ? activeColor : inactiveColor}
       target={target}
+      borderRadius="md"
+      transition="all 0.2s ease-in-out"
+      _hover={{
+        bg: active ? activeBg : hoverBg,
+        transform: 'translateY(-1px)'
+      }}
+      fontWeight={active ? 'bold' : 'medium'}
       {...props}
     >
       {children}
@@ -44,21 +55,24 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
   const { path } = props
+  const bgColor = useColorModeValue('#ffffff80', '#20202380')
+  const borderColor = useColorModeValue('gray.200', 'whiteAlpha.200')
 
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      bg={bgColor}
+      borderBottom="1px solid"
+      borderColor={borderColor}
+      css={{ backdropFilter: 'blur(20px)' }}
       zIndex={2}
-      borderRadius="0 0 lg lg"
       {...props}
     >
       <Container
         display="flex"
-        p={2}
+        p={3}
         maxW="container.md"
         wrap="wrap"
         align="center"
@@ -77,6 +91,7 @@ const Navbar = props => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          spacing={1}
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -94,7 +109,8 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
-            pl={2}
+            pl={3}
+            pr={3}
           >
             <IoLogoGithub />
             Source
@@ -111,8 +127,15 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                borderRadius="md"
+                _hover={{
+                  bg: useColorModeValue('gray.100', 'whiteAlpha.200')
+                }}
               />
-              <MenuList>
+              <MenuList
+                bg={useColorModeValue('white', 'gray.800')}
+                borderColor={borderColor}
+              >
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>

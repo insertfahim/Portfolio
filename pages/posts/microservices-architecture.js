@@ -6,7 +6,6 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Link,
   Image,
   Code,
   Alert,
@@ -16,7 +15,6 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Post = () => (
   <Layout title="Microservices Architecture: From Monolith to Distributed Systems">
