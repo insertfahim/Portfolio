@@ -55,6 +55,56 @@ const Posts = () => (
           </GridItem>
         </SimpleGrid>
       </Section>
+
+      <Section delay={0.5}>
+        <Divider my={6} />
+        <Heading as="h3" fontSize={20} mb={4}>
+          Software Architecture & Development
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="System Design Principles: Building Scalable Applications"
+            thumbnail="/images/System Design Principles Building Scalable Applications.png"
+            href="/posts/system-design-principles"
+          >
+            Learn the fundamental principles of designing scalable, maintainable
+            software systems for modern applications.
+          </GridItem>
+          <GridItem
+            title="Microservices Architecture: From Monolith to Distributed Systems"
+            thumbnail="/images/Microservices Architecture From Monolith to Distributed Systems.png"
+            href="/posts/microservices-architecture"
+          >
+            A comprehensive guide to transitioning from monolithic applications
+            to microservices architecture.
+          </GridItem>
+        </SimpleGrid>
+      </Section>
+
+      <Section delay={0.7}>
+        <Divider my={6} />
+        <Heading as="h3" fontSize={20} mb={4}>
+          Frontend Development
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="React Performance Optimization: Essential Techniques"
+            thumbnail="/images/React Performance Optimization Essential Techniques.png"
+            href="/posts/react-performance-optimization"
+          >
+            Master the techniques for optimizing React applications, from
+            preventing unnecessary re-renders to bundle optimization.
+          </GridItem>
+          <GridItem
+            title="TypeScript Best Practices: Writing Maintainable Code"
+            thumbnail="/images/TypeScript Best Practices Writing Maintainable Code.png"
+            href="/posts/typescript-best-practices"
+          >
+            Learn essential patterns and techniques for writing clean,
+            maintainable TypeScript code in production applications.
+          </GridItem>
+        </SimpleGrid>
+      </Section>
     </Container>
   </Layout>
 )

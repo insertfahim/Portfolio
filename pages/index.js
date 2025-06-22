@@ -183,7 +183,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6} alignItems="stretch">
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://insertfahim.vercel.app/"
             title="Portfolio"

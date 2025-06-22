@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, AspectRatio } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -12,16 +12,17 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
     flexDirection="column"
   >
     <LinkBox cursor="pointer" h="100%" display="flex" flexDirection="column">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        loading="lazy"
-        width={400}
-        height={200}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        style={{ objectFit: 'cover' }}
-      />
+      <AspectRatio ratio={1.8 / 1} w="100%">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          loading="lazy"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: 'contain' }}
+        />
+      </AspectRatio>
       <LinkOverlay href={href} target="_blank">
         <Text mt={2} fontWeight="semibold">
           {title}
@@ -48,13 +49,17 @@ export const WorkGridItem = ({
       scroll={false}
       cursor="pointer"
     >
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        width={400}
-        height={200}
-      />
+      <AspectRatio ratio={1.8 / 1} w="100%">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          loading="lazy"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: 'contain' }}
+        />
+      </AspectRatio>
       <LinkOverlay as="div" href={`/${category}/${id}`}>
         <Text mt={2} fontSize={20}>
           {title}
@@ -69,7 +74,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
       .grid-item-thumbnail {
-        border-radius: 12px;
+        border-radius: 6px;
       }
     `}
   />
