@@ -28,7 +28,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ 
-                objectFit: 'cover',
+                objectFit: 'contain',
                 borderRadius: '8px'
               }}
               onLoad={() => setImageLoaded(true)}
@@ -81,7 +81,7 @@ export const WorkGridItem = ({
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ 
-                objectFit: 'cover',
+                objectFit: 'contain',
                 borderRadius: '8px'
               }}
               onLoad={() => setImageLoaded(true)}
@@ -110,7 +110,7 @@ export const GridItemStyle = () => (
         transition: transform 0.2s ease-in-out;
       }
       .grid-item-thumbnail:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
       }
     `}
   />

@@ -105,56 +105,6 @@ const Posts = () => (
           </GridItem>
         </SimpleGrid>
       </Section>
-
-      <Section delay={0.9}>
-        <Divider my={6} />
-        <Heading as="h3" fontSize={20} mb={4}>
-          Advanced Software Architecture
-        </Heading>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="Event-Driven Architecture: Building Responsive Systems"
-            thumbnail="/images/System Design Principles Building Scalable Applications.png"
-            href="/posts/event-driven-architecture"
-          >
-            Explore event-driven patterns and how to build highly responsive,
-            decoupled software systems.
-          </GridItem>
-          <GridItem
-            title="Domain-Driven Design: Strategic Modeling for Complex Systems"
-            thumbnail="/images/Microservices Architecture From Monolith to Distributed Systems.png"
-            href="/posts/domain-driven-design"
-          >
-            Master DDD principles to create well-structured, maintainable
-            software that reflects business domain complexity.
-          </GridItem>
-        </SimpleGrid>
-      </Section>
-
-      <Section delay={1.1}>
-        <Divider my={6} />
-        <Heading as="h3" fontSize={20} mb={4}>
-          Modern Frontend Technologies
-        </Heading>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="Next.js 14: Server Components and App Router Deep Dive"
-            thumbnail="/images/React Performance Optimization Essential Techniques.png"
-            href="/posts/nextjs-14-deep-dive"
-          >
-            Comprehensive guide to Next.js 14 features including Server
-            Components, App Router, and performance optimizations.
-          </GridItem>
-          <GridItem
-            title="State Management in Modern React: Context, Redux, and Zustand"
-            thumbnail="/images/TypeScript Best Practices Writing Maintainable Code.png"
-            href="/posts/state-management-react"
-          >
-            Compare and implement different state management solutions for
-            React applications with real-world examples.
-          </GridItem>
-        </SimpleGrid>
-      </Section>
     </Container>
   </Layout>
 )
