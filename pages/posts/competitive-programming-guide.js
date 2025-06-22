@@ -6,11 +6,11 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Link,
-  Image
+  Link
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
+import { BlogImage } from '../../components/blog-image'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Post = () => (
@@ -22,7 +22,7 @@ const Post = () => (
       <Text color="gray.500" fontSize="sm" mb={8}>
         June 7, 2025 • 12 min read
       </Text>
-      <Image
+      <BlogImage
         src="/images/Art of Competitive Programming.png"
         alt="Competitive Programming"
         borderRadius="lg"

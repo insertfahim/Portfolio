@@ -3,9 +3,17 @@ import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay, AspectRatio, Skeleton } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { useState } from 'react'
+import { useImagePreview, ImagePreviewModal } from './image-preview-modal'
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
   const [imageLoaded, setImageLoaded] = useState(false)
+  const { isOpen, previewImage, openPreview, closePreview } = useImagePreview()
+
+  const handleImageClick = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    openPreview(thumbnail, title)
+  }
 
   return (
     <Box
@@ -29,10 +37,12 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ 
                 objectFit: 'contain',
-                borderRadius: '8px'
+                borderRadius: '8px',
+                cursor: 'pointer'
               }}
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
+              onClick={handleImageClick}
             />
           </Skeleton>
         </AspectRatio>
@@ -45,6 +55,12 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
           {children}
         </Text>
       </LinkBox>
+      <ImagePreviewModal
+        isOpen={isOpen}
+        onClose={closePreview}
+        imageSrc={previewImage.src}
+        imageAlt={previewImage.alt}
+      />
     </Box>
   )
 }
@@ -57,6 +73,13 @@ export const WorkGridItem = ({
   thumbnail
 }) => {
   const [imageLoaded, setImageLoaded] = useState(false)
+  const { isOpen, previewImage, openPreview, closePreview } = useImagePreview()
+
+  const handleImageClick = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    openPreview(thumbnail, title)
+  }
 
   return (
     <Box 
@@ -82,10 +105,12 @@ export const WorkGridItem = ({
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ 
                 objectFit: 'contain',
-                borderRadius: '8px'
+                borderRadius: '8px',
+                cursor: 'pointer'
               }}
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
+              onClick={handleImageClick}
             />
           </Skeleton>
         </AspectRatio>
@@ -98,6 +123,12 @@ export const WorkGridItem = ({
           {children}
         </Text>
       </LinkBox>
+      <ImagePreviewModal
+        isOpen={isOpen}
+        onClose={closePreview}
+        imageSrc={previewImage.src}
+        imageAlt={previewImage.alt}
+      />
     </Box>
   )
 }

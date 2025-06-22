@@ -6,11 +6,11 @@ import {
   UnorderedList,
   ListItem,
   OrderedList,
-  Image,
   Code
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
+import { BlogImage } from '../../components/blog-image'
 
 const Post = () => (
   <Layout title="Advanced Data Structures for Coding Interviews">
@@ -19,9 +19,9 @@ const Post = () => (
         Advanced Data Structures for Coding Interviews
       </Heading>
       <Text color="gray.500" fontSize="sm" mb={8}>
-        June 5, 2025 • 15 min read
+        June 7, 2025 • 15 min read
       </Text>
-      <Image
+      <BlogImage
         src="/images/Advanced Data Structures for Coding Interviews.png"
         alt="Advanced Data Structures"
         borderRadius="lg"

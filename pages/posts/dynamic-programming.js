@@ -5,7 +5,6 @@ import {
   Box,
   UnorderedList,
   ListItem,
-  Image,
   Code,
   Table,
   Thead,
@@ -16,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
+import { BlogImage } from '../../components/blog-image'
 
 const Post = () => (
   <Layout title="Dynamic Programming Masterclass">
@@ -24,11 +24,11 @@ const Post = () => (
         Dynamic Programming Masterclass
       </Heading>
       <Text color="gray.500" fontSize="sm" mb={8}>
-        June 3, 2025 • 18 min read
+        June 7, 2025 • 18 min read
       </Text>
-      <Image
+      <BlogImage
         src="/images/Dynamic Programming Masterclass.png"
-        alt="Dynamic Programming Masterclass"
+        alt="Dynamic Programming"
         borderRadius="lg"
         w="full"
         mb={6}
