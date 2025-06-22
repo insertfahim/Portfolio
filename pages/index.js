@@ -76,15 +76,15 @@ const Home = () => (
         </Heading>
         <Paragraph>
           <strong>Tasnimul Mohammad Fahim</strong> is a Dhaka-based full-stack
-          developer and computer-science undergraduate who builds
-          high-performance products end-to-end. In three years of professional
+          web developer and computer-science undergraduate who builds
+          high-performance web applications end-to-end. In three years of professional
           work he has shipped multi-tenant React/Next.js platforms serving 50 k+
-          daily users and led a diabetic-retinopathy research project that
-          reached an F1 score of 0.87 on 35 k fundus images. Proficient in
-          Python, TypeScript, and modern ML stacks, he handles everything from
-          system design to front-end polish with a bias for clean, scalable
-          code. Off-screen, he switches to a camera and street photography but
-          rarely stays away from the editor for long.
+          daily users, specializing in modern web technologies and scalable
+          architecture. Proficient in JavaScript, TypeScript, React, Node.js, and
+          modern web stacks, he handles everything from system design to front-end
+          polish with a bias for clean, maintainable code. Off-screen, he switches
+          to a camera and street photography but rarely stays away from the editor
+          for long.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -110,11 +110,15 @@ const Home = () => (
         <BioSection>
           <BioYear>2025</BioYear>
           Completed the Bachelor&apos;s of Science in Computer Science at Brac
-          University
+          University.
         </BioSection>
         <BioSection>
-          <BioYear>2024-Present</BioYear>
-          Working as a Research Assistant at Brac University
+          <BioYear>2024-2025</BioYear>
+          Full-stack Developer at Glamour Technologies, Dhaka, Bangladesh (Remote).
+        </BioSection>
+        <BioSection>
+          <BioYear>2023-2024</BioYear>
+          Junior Web Developer at Doin Inc., Dhaka, Bangladesh.
         </BioSection>
 
         <Box align="center" my={4}>
