@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if not exist \"C:\\Users\\Shuvo\\Desktop\\Portfolio\\public\\images\\works\" mkdir \"C:\\Users\\Shuvo\\Desktop\\Portfolio\\public\\images\\works\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

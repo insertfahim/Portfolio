@@ -31,7 +31,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie web app developer based in Bangladesh!
+        Hello, I&apos;m a Software Engineer at <Link href="http://base360.ai/" target="_blank">Base360.ai</Link>, based in Bangladesh.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -39,7 +39,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Tasnimul Mohammad Fahim
           </Heading>
-          <p>Digital Craftsman ( Fullstack Web Developer / Designer )</p>
+          <p>Digital Craftsman (Full-Stack Software Engineer / Designer)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -75,16 +75,17 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          <strong>Tasnimul Mohammad Fahim</strong> is a Dhaka-based full-stack
-          web developer and computer-science undergraduate who builds
-          high-performance web applications end-to-end. In three years of professional
-          work he has shipped multi-tenant React/Next.js platforms serving 50 k+
-          daily users, specializing in modern web technologies and scalable
-          architecture. Proficient in JavaScript, TypeScript, React, Node.js, and
-          modern web stacks, he handles everything from system design to front-end
-          polish with a bias for clean, maintainable code. Off-screen, he switches
-          to a camera and street photography but rarely stays away from the editor
-          for long.
+          <strong>Tasnimul Mohammad Fahim</strong> is a full-stack software engineer
+          who architects and ships enterprise-scale platforms from the ground up.
+          He has single-handedly built multiple production SaaS products—including
+          property management systems with 100+ API endpoints, 550+ React components,
+          and real-time multi-tenant architectures serving 500+ properties across
+          London, Paris, and Algiers. His stack spans React, Next.js 14, TypeScript,
+          FastAPI, PostgreSQL, Redis, and Docker, with deep integrations into Stripe,
+          Hostaway, and Google Cloud APIs. He delivers end-to-end: system design,
+          database architecture, payment processing, internationalization (5 languages
+          with RTL support), and deployment pipelines. When not engineering software,
+          he explores the world through street photography.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -109,16 +110,19 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2025</BioYear>
-          Completed the Bachelor&apos;s of Science in Computer Science at Brac
-          University.
+          Graduated with a B.Sc. in Computer Science from Brac University.
         </BioSection>
         <BioSection>
-          <BioYear>2024-2025</BioYear>
-          Full-stack Developer at Glamour Technologies, Dhaka, Bangladesh (Remote).
+          <BioYear>2025–Present</BioYear>
+          Software Engineer at Base360.ai.
         </BioSection>
         <BioSection>
-          <BioYear>2023-2024</BioYear>
-          Junior Web Developer at Doin Inc., Dhaka, Bangladesh.
+          <BioYear>2024–2025</BioYear>
+          Full-stack Developer at Glamour Technologies (Remote).
+        </BioSection>
+        <BioSection>
+          <BioYear>2023–2024</BioYear>
+          Junior Web Developer at Doin Inc., Dhaka.
         </BioSection>
 
         <Box align="center" my={4}>

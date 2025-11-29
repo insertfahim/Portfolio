@@ -1,8 +1,13 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
+import thumbFlexPMS from '../public/images/works/the-flex-pms.png'
+import thumbHomely from '../public/images/works/homely.png'
+import thumbLimeStays from '../public/images/works/limestays.png'
+import thumbWestHolidays from '../public/images/works/westholidays.png'
+import thumbFlexExtension from '../public/images/works/the-flex-extension.png'
 import thumbLMS from '../public/images/LMS.png'
 import thumbAILearningJourney from '../public/images/ailms.png'
 import thumbInventoryFlow from '../public/images/Inventory.png'
@@ -25,6 +30,61 @@ const Works = () => (
         Works
       </Heading>
 
+      <Heading as="h4" fontSize={16} mb={4}>
+        Enterprise Projects
+      </Heading>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="the-flex-pms"
+            thumbnail={thumbFlexPMS}
+            title="The Flex PMS"
+          >
+            Enterprise property management system with 101+ API endpoints, 554+
+            React components, and real-time multi-tenant architecture
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem id="homely" thumbnail={thumbHomely} title="Homely">
+            Multilingual short-term rental platform with 500+ properties, 5
+            languages, and Stripe payment processing
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="limestays"
+            thumbnail={thumbLimeStays}
+            title="LimeStays"
+          >
+            Full-featured rental SaaS with multiple payment gateways, CRM
+            integration, and real-time property management
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="westholidays"
+            thumbnail={thumbWestHolidays}
+            title="West Holidays"
+          >
+            Multi-tenant rental platform with 126+ properties across 3 Stripe
+            accounts and intelligent payment routing
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="the-flex-extension"
+            thumbnail={thumbFlexExtension}
+            title="The Flex Extension"
+          >
+            Production booking extension platform with Hostaway integration, 4
+            languages with RTL support, and automated reservations
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
+      <Heading as="h4" fontSize={16} mb={4} mt={8}>
+        Personal Projects
+      </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.2}>
           <WorkGridItem id="lms" thumbnail={thumbLMS} title="University LMS">
