@@ -5,7 +5,8 @@ import {
   List,
   ListItem,
   UnorderedList,
-  Heading
+  Heading,
+  Center
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
@@ -19,10 +20,10 @@ const Work = () => (
         IntelliMail <Badge>2024</Badge>
       </Title>{' '}
       <P>
-        AI-powered email client that revolutionizes email management through
-        intelligent features and modern web technologies. Features advanced AI
-        capabilities with multi-provider integration, creating an efficient
-        email experience.
+        AI-powered email client with RAG pipeline processing 100K+ emails,
+        achieving 50ms semantic search vs 2s+ keyword search (40x speedup).
+        Features idempotent Stripe webhook processing with Redis deduplication
+        and dead-letter queue, reaching 98% payment success rate and $8K MRR.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -34,57 +35,55 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Web (Full-Stack) / Desktop / Mobile</span>
+          <span>Web (Full-Stack SaaS)</span>
         </ListItem>
         <ListItem>
-          <Meta>Frontend Stack</Meta>
-          <span>
-            Next.js 14, TypeScript, Tailwind CSS, Radix UI, Framer Motion
-          </span>
+          <Meta>Stack</Meta>
+          <span>Next.js 14, tRPC, PostgreSQL, OpenAI, Stripe</span>
         </ListItem>
         <ListItem>
-          <Meta>Backend Stack</Meta>
-          <span>Prisma ORM, PostgreSQL, tRPC, Zod, Node.js</span>
+          <Meta>Search Performance</Meta>
+          <span>50ms semantic search (40x speedup vs keyword)</span>
         </ListItem>
         <ListItem>
-          <Meta>AI & Search</Meta>
-          <span>OpenAI API, Orama Search Engine, Vector Embeddings, RAG</span>
+          <Meta>Payment Success</Meta>
+          <span>98% success rate, $8K MRR</span>
         </ListItem>
         <ListItem>
-          <Meta>External Services</Meta>
-          <span>Aurinko API, Clerk Auth, Stripe Payments, Vercel</span>
+          <Meta>Vector Storage</Meta>
+          <span>pgvector with HNSW index, OpenAI ada-002 embeddings</span>
         </ListItem>
       </List>
       <WorkImage src="/images/intellimail.png" alt="IntelliMail Interface" />
       <Heading as="h4" fontSize={16} my={6}>
-        AI-Powered Capabilities
+        <Center>RAG Pipeline & Search</Center>
       </Heading>
       <UnorderedList my={4}>
         <ListItem>
-          <strong>Smart Email Composition:</strong> AI-assisted writing with
-          auto-completion, suggestions, and contextual content generation
+          <strong>Email Processing:</strong> Chunked 100K+ emails into semantic
+          segments for efficient vector embedding generation
         </ListItem>
         <ListItem>
-          <strong>Intelligent Summarization:</strong> Automatically generate
-          concise summaries of long email threads and conversations
+          <strong>Embedding Generation:</strong> Generated embeddings via OpenAI
+          ada-002 model with optimized batch processing
         </ListItem>
         <ListItem>
-          <strong>Context-Aware Responses:</strong> AI-generated reply
-          suggestions based on email content, history, and conversation context
+          <strong>Vector Storage:</strong> Stored embeddings in pgvector with HNSW
+          index for efficient similarity search
         </ListItem>
         <ListItem>
-          <strong>Advanced RAG Search:</strong> Natural language search queries
-          powered by embeddings and Retrieval Augmented Generation technology
+          <strong>Search Performance:</strong> Achieved 50ms semantic search vs 2s+
+          keyword search—40x speedup improvement
         </ListItem>
         <ListItem>
-          <strong>Semantic Understanding:</strong> Deep content analysis for
-          intelligent categorization and priority detection
+          <strong>RAG Retrieval:</strong> Context-aware responses using retrieved
+          email chunks for accurate AI-generated replies
         </ListItem>
       </UnorderedList>
       <WorkImage src="/images/intellimail 2.png" alt="AI Assistant Interface" />
       <WorkImage src="/images/intellimail 3.png" alt="Email Composition" />
       <Heading as="h4" fontSize={16} my={6}>
-        Email Management Features
+        <Center>Email Management Features</Center>
       </Heading>
       <UnorderedList my={4}>
         <ListItem>
@@ -110,7 +109,7 @@ const Work = () => (
       </UnorderedList>
       <WorkImage src="/images/intellimail 4.png" alt="Email Threading" />
       <Heading as="h4" fontSize={16} my={6}>
-        Technical Architecture
+        <Center>Technical Architecture</Center>
       </Heading>
       <P>
         IntelliMail features a sophisticated full-stack architecture built on
@@ -143,33 +142,34 @@ const Work = () => (
       </UnorderedList>
       <WorkImage src="/images/intellimail 5.png" alt="Search Interface" />
       <Heading as="h4" fontSize={16} my={6}>
-        Premium Features & Monetization
+        <Center>Payment Infrastructure & Reliability</Center>
       </Heading>
       <UnorderedList my={4}>
         <ListItem>
-          <strong>Subscription Management:</strong> Stripe-powered payment
-          processing with multiple tier options and usage-based pricing
+          <strong>Idempotent Processing:</strong> Implemented idempotent Stripe
+          webhook event processing with Redis deduplication to prevent duplicate
+          charges
         </ListItem>
         <ListItem>
-          <strong>Usage Analytics:</strong> Detailed insights into email
-          patterns, productivity metrics, and AI feature utilization
+          <strong>Dead-Letter Queue:</strong> Built dead-letter queue for failed
+          webhook events with automated retry using exponential backoff
         </ListItem>
         <ListItem>
-          <strong>Priority Support:</strong> Enhanced customer service and
-          direct access to advanced features for premium users
+          <strong>Payment Success Rate:</strong> Achieved 98% payment success rate
+          through robust error handling and retry mechanisms
         </ListItem>
         <ListItem>
-          <strong>Advanced AI Models:</strong> Access to latest GPT models,
-          custom fine-tuned models, and experimental features
+          <strong>Revenue Growth:</strong> Reached $8K MRR through reliable
+          subscription management and billing automation
         </ListItem>
         <ListItem>
-          <strong>Enterprise Features:</strong> Team collaboration, admin
-          controls, and custom integrations for business users
+          <strong>Subscription Tiers:</strong> Multiple pricing tiers with
+          usage-based billing and seamless upgrade/downgrade flows
         </ListItem>
       </UnorderedList>
       <WorkImage src="/images/intellimail 6.png" alt="Premium Dashboard" />
       <Heading as="h4" fontSize={16} my={6}>
-        Key Innovations
+        <Center>Key Innovations</Center>
       </Heading>
       <UnorderedList my={4}>
         <ListItem>

@@ -31,7 +31,7 @@ const Works = () => (
       </Heading>
 
       <Heading as="h4" fontSize={16} mb={4}>
-        Enterprise Projects
+        Featured Projects (from Resume)
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.1}>
@@ -40,8 +40,8 @@ const Works = () => (
             thumbnail={thumbFlexPMS}
             title="The Flex PMS"
           >
-            Enterprise property management system with 101+ API endpoints, 554+
-            React components, and real-time multi-tenant architecture
+            Multi-tenant PMS serving 500+ properties with 15K+ daily transactions.
+            Built observability stack (Prometheus, Grafana) reducing MTTD 82%, MTTR 79%.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
@@ -116,10 +116,10 @@ const Works = () => (
           <WorkGridItem
             id="evo2"
             thumbnail={thumbEvo}
-            title="Evo2 Variant Analysis"
+            title="Variant Analysis Evo2"
           >
-            Genomic variant analysis platform powered by Evo2 AI model for
-            genetic variant pathogenicity prediction
+            Serverless GPU inference on Modal with 60% FinOps savings. Circuit breaker
+            pattern with 99.5% availability, 1K+ analyses/hour.
           </WorkGridItem>
         </Section>
 
@@ -150,7 +150,8 @@ const Works = () => (
             thumbnail={thumbIntelliMail}
             title="IntelliMail"
           >
-            AI-powered email client with intelligent composition and RAG search
+            RAG pipeline with pgvector/HNSW achieving 50ms semantic search (40x speedup).
+            98% Stripe payment success, $8K MRR.
           </WorkGridItem>
         </Section>
         <Section delay={0.4}>

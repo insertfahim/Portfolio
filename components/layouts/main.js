@@ -18,23 +18,23 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8} className={inter.className}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Tasnimul Mohammad Fahim - Fullstack Web Developer and Designer" />
+        <meta name="description" content="Tasnimul Mohammad Fahim - SRE-focused Software Engineer specializing in cloud infrastructure, observability, and fault-tolerant systems" />
         <meta name="author" content="Tasnimul Mohammad Fahim" />
-        <meta name="author" content="craftzdog" />
+        <meta name="keywords" content="SRE, Software Engineer, Kubernetes, Prometheus, Grafana, Cloud Infrastructure, DevOps, Observability" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Tasnimul Mohammad Fahim" />
+        <meta name="twitter:title" content="Tasnimul Mohammad Fahim - SRE-focused Software Engineer" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
-        <meta name="twitter:description" content="Fullstack Web Developer and Designer based in Bangladesh" />
+        <meta name="twitter:site" content="@beingfaahim" />
+        <meta name="twitter:creator" content="@beingfaahim" />
+        <meta name="twitter:image" content="/images/fahim.jpg" />
+        <meta name="twitter:description" content="SRE-focused Software Engineer building observable, fault-tolerant systems | Kubernetes, Prometheus, AWS" />
         <meta property="og:site_name" content="Tasnimul Mohammad Fahim" />
-        <meta name="og:title" content="Tasnimul Mohammad Fahim" />
+        <meta name="og:title" content="Tasnimul Mohammad Fahim - SRE-focused Software Engineer" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <meta property="og:description" content="Fullstack Web Developer and Designer based in Bangladesh" />
-        <title>Tasnimul Mohammad Fahim - Homepage</title>
+        <meta property="og:image" content="/images/fahim.jpg" />
+        <meta property="og:description" content="SRE-focused Software Engineer building observable, fault-tolerant systems | Kubernetes, Prometheus, AWS" />
+        <title>Tasnimul Mohammad Fahim - SRE-focused Software Engineer</title>
       </Head>
 
       <NavBar path={router.asPath} />

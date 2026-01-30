@@ -31,7 +31,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a Software Engineer at <Link href="http://base360.ai/" target="_blank">Base360.ai</Link>, based in Bangladesh.
+        Hello, I&apos;m a Software Engineer at <Link href="https://theflex.co.uk/" target="_blank">The Flex</Link> & <Link href="https://base360.ai/" target="_blank">base360.ai</Link>, based in Bangladesh.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -39,7 +39,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Tasnimul Mohammad Fahim
           </Heading>
-          <p>Digital Craftsman (Full-Stack Software Engineer / Designer)</p>
+          <p>SRE-focused Software Engineer | Cloud & Observability</p>
         </Box>
         <Box
           flexShrink={0}
@@ -75,17 +75,17 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          <strong>Tasnimul Mohammad Fahim</strong> is a full-stack software engineer
-          who architects and ships enterprise-scale platforms from the ground up.
-          He has single-handedly built multiple production SaaS products—including
-          property management systems with 100+ API endpoints, 550+ React components,
-          and real-time multi-tenant architectures serving 500+ properties across
-          London, Paris, and Algiers. His stack spans React, Next.js 14, TypeScript,
-          FastAPI, PostgreSQL, Redis, and Docker, with deep integrations into Stripe,
-          Hostaway, and Google Cloud APIs. He delivers end-to-end: system design,
-          database architecture, payment processing, internationalization (5 languages
-          with RTL support), and deployment pipelines. When not engineering software,
-          he explores the world through street photography.
+          <strong>Tasnimul Mohammad Fahim</strong> is an SRE-focused Software Engineer
+          with hands-on experience building observable, fault-tolerant systems for
+          multi-tenant applications handling 15K+ daily transactions. Specialized in
+          cloud infrastructure, deployment automation, and incident management—delivering
+          10x latency improvements and 80%+ reductions in detection/recovery time.
+          His stack spans Python, Go, TypeScript, FastAPI, PostgreSQL, Redis, and
+          Kubernetes, with deep expertise in Prometheus, Grafana, and SLO-driven
+          reliability practices. He architects micro-frontend systems, implements
+          defense-in-depth security (OAuth 2.0 PKCE, JWT rotation, RBAC), and builds
+          CI/CD pipelines with blue-green deployments. When not engineering reliable
+          systems, he explores algorithmic problem-solving on LeetCode.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -105,24 +105,16 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2002</BioYear>
-          Born in Dhaka, Bangladesh.
+          <BioYear>2021–2025</BioYear>
+          B.Sc. in Computer Science and Engineering, BRAC University, Dhaka.
         </BioSection>
         <BioSection>
-          <BioYear>2025</BioYear>
-          Graduated with a B.Sc. in Computer Science from Brac University.
+          <BioYear>Sep 2025–Present</BioYear>
+          Software Engineer at The Flex & base360.ai (Remote, UK).
         </BioSection>
         <BioSection>
-          <BioYear>2025–Present</BioYear>
-          Software Engineer at Base360.ai.
-        </BioSection>
-        <BioSection>
-          <BioYear>2024–2025</BioYear>
-          Full-stack Developer at Glamour Technologies (Remote).
-        </BioSection>
-        <BioSection>
-          <BioYear>2023–2024</BioYear>
-          Junior Web Developer at Doin Inc., Dhaka.
+          <BioYear>Jun 2023–Feb 2024</BioYear>
+          Full Stack Developer at Doin Tech (Remote).
         </BioSection>
 
         <Box align="center" my={4}>
@@ -139,12 +131,35 @@ const Home = () => (
         </Box>
       </Section>
 
+      <Section delay={0.25}>
+        <Heading as="h3" variant="section-title">
+          Technical Skills
+        </Heading>
+        <List spacing={2}>
+          <ListItem>
+            <strong>Cloud & Infrastructure:</strong> AWS (EC2, S3, Lambda), GCP, Docker, Kubernetes, Terraform, Nginx, CI/CD
+          </ListItem>
+          <ListItem>
+            <strong>Observability & SRE:</strong> Prometheus, Grafana, OpenTelemetry, SLO/SLI, Error Budgets, MTTR/MTTD
+          </ListItem>
+          <ListItem>
+            <strong>Languages:</strong> Python, Go, Java, TypeScript, JavaScript, SQL, Bash
+          </ListItem>
+          <ListItem>
+            <strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Redis, Query Optimization, Connection Pooling
+          </ListItem>
+          <ListItem>
+            <strong>Frameworks:</strong> FastAPI, React, Next.js, Node.js, Express.js, GraphQL, gRPC
+          </ListItem>
+        </List>
+      </Section>
+
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
         <Paragraph>
-          Problem solving,Web Development, Movie, Travelling
+          Site Reliability Engineering, Cloud Infrastructure, Observability, Problem Solving, Open Source
         </Paragraph>
       </Section>
 
@@ -212,8 +227,8 @@ const Home = () => (
           Newsletter
         </Heading>
         <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
+          Join me for insights on SRE practices, observability patterns, and
+          building reliable distributed systems.
         </p>
 
         <Box my={4}>
